@@ -7,7 +7,7 @@ import taosrest
 def get_weather(location, conn):
 
     # Create your key and replace mine with it
-    payload = {'Key': 'fed028b417bf48408c552501221407', 'q': location, 'aqi': 'yes'}
+    payload = {'Key': '216c55e6b79544339b613615232208', 'q': location, 'aqi': 'yes'}
     r = requests.get("http://api.weatherapi.com/v1/current.json", params=payload)
 
     # Get the json from the request's result
