@@ -10,10 +10,10 @@ Here's an overview of the pipeline:
 # What to do in the right order
 - Create account on [weatherapi.com](https://www.weatherapi.com) and generate a token
 - Clone repository to local and replace the token
-- Setup the TDengine cloud database on [tdengine.com](https://cloud.tdengine.com/login)
-- Create the weather database, stable and tables berlin and sanfrancisco
-- Install TDengine connector for python with `pip install taospy`
-- Run the code in your VSCode or other dev env and check TDengine if the data is there
+- Set up a Azure Time Series Insights Environment [MSFT Azure TSI](https://learn.microsoft.com/en-us/azure/time-series-insights/)
+- Create the weather database, stable and tables cuenca and cartagena
+- Install Azure TSI connector for python with `pip install -
+- Run the code in your VSCode or other dev env and check Azure TSI if the data is there
 - Build the docker container `docker build -f dockerfile-user -t weather-data .`
 - If not done already install the AWS cli (see helpful links below)
 - Create a development user and role in IAM with full rights to ecr, create keys for that user
