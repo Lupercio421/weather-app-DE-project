@@ -1,5 +1,7 @@
+# This command sets the base image to python 3.9
 FROM python:3.9
 
+#Copies the contents of the published app to the container's /app directory
 COPY requirements.txt /tmp/
 
 RUN pip install --no-cache-dir --upgrade pip && \
