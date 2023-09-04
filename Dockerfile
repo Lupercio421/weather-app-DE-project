@@ -6,10 +6,11 @@ ENV AzureWebJobsScriptRoot=/home/site/wwwroot \
     AzureFunctionsJobHost__Logging__Console__IsEnabled=true
 
 COPY requirements.txt /
+
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install -r /requirements.txt
 
-COPY . /home/site/wwwroot
+#COPY . /home/site/wwwroot
 
 COPY ./src/writer_json.py /src/writer_json.py
 
