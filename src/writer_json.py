@@ -15,7 +15,7 @@ def get_weather(location, conn):
 
     # Take only the current part of the JSON
     current = r_string['current']
-    #print(current)
+    print(current)
 
     # Fix time format from YYYY-MM-DD hh:mm:ss to -> YYYY-MM-DDThh:mm:ssZ
     # create datetime object from string
