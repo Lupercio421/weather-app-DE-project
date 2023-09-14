@@ -12,6 +12,6 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 #COPY . /home/site/wwwroot
 
-COPY ./src/writer_json.py /src/writer_json.py
+COPY ./src/function_app.py /home/site/wwwroot/function_app.py
 
-ENTRYPOINT ["python","./src/writer_json.py"]
+ENTRYPOINT ["python", "/home/site/wwwroot/function_app.py"]
