@@ -12,6 +12,6 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 #COPY . /home/site/wwwroot
 
-COPY ./src/function_app.py /home/site/wwwroot/function_app.py
+COPY ./WeatherAppDataTrigger/function_app.py /home/site/wwwroot/function_app.py
 
 ENTRYPOINT ["python", "/home/site/wwwroot/function_app.py"]
